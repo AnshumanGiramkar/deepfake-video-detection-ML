@@ -124,7 +124,7 @@ def index():
         
         video_dataset = validation_dataset([video_path], sequence_length=sequence_length, transform=train_transforms)
         #model_name = get_accurate_model(sequence_length)
-        path_to_model = "/content/drive/MyDrive/DeepFake/best_model_accuracy.pt"
+        path_to_model = "best_model_accuracy.pt"
         model.load_state_dict(torch.load(path_to_model))
         model.eval()
         prediction = predict(model, video_dataset[0])
