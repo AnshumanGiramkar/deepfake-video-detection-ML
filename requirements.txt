@@ -5,7 +5,7 @@ torchvision
 face-recognition
 opencv-python
 matplotlib
-sklearn
+scikit-learn
 seaborn
 PIL
 streamlit
