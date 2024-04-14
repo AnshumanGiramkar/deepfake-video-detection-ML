@@ -1,7 +1,5 @@
-
 pandas
 numpy
-os
 torch
 torchvision
 face-recognition
@@ -9,11 +7,6 @@ cv2
 matplotlib
 random
 sklearn
-scikit-learn
 seaborn
-json
-copy
-sys
-time
 PIL
 streamlit
