@@ -120,7 +120,7 @@ def run_model():
         st.video(uploaded_file)
 
         sequence_length = st.number_input("Enter sequence length", min_value=1, value=60)
-        model = Model(2).cuda()
+        model = Model(2)
         st.write("Model loaded successfully.")
         st.write("Starting prediction...")
 
