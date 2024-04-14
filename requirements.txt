@@ -3,7 +3,7 @@ numpy
 torch
 torchvision
 face-recognition
-cv2
+opencv-python
 matplotlib
 random
 sklearn
