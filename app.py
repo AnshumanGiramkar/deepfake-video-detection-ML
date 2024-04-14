@@ -131,7 +131,8 @@ def run_model():
 
         # Load the trained model
         path_to_model = "/content/drive/MyDrive/DeepFake/best_model_accuracy.pt"
-        model.load_state_dict(torch.load(path_to_model))
+        # model.load_state_dict(torch.load(path_to_model))
+        model.load_state_dict(torch.load(path_to_model, map_location=torch.device('cpu')))
         model.eval()
         prediction = predict(model, video_dataset[0])
 
