@@ -94,9 +94,9 @@ def im_convert(tensor):
     image = image.transpose(1,2,0)
     image = image.clip(0, 1)
     return image
-
+#.to('cuda')
 def predict(model,img):
-    fmap,logits = model(img.to('cuda'))
+    fmap,logits = model(img)
     logits = sm(logits)
     _,prediction = torch.max(logits,1)
     confidence = logits[:,int(prediction.item())].item()*100
@@ -115,7 +115,7 @@ def index():
     uploaded_file = st.file_uploader("Upload a video", type=["mp4", "gif", "webm", "avi", "3gp", "wmv", "flv", "mkv"])
     if uploaded_file is not None:
         sequence_length = st.number_input("Enter sequence length", min_value=1, value=60)
-        model = Model(2).cuda()
+        model = Model(2)
         st.write("Model loaded successfully.")
         st.write("Starting prediction...")
         
