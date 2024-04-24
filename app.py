@@ -130,9 +130,14 @@ def run_model():
         video_dataset = validation_dataset([video_path], sequence_length=sequence_length, transform=train_transforms)
 
         # Load the trained model
-        path_to_model = "best-checkpoint-model.pt"
-        # model.load_state_dict(torch.load(path_to_model))
+
+        current_directory = os.getcwd()
+
+# Construct the absolute path to the model checkpoint file
+        path_to_model = os.path.join(current_directory, 'weighted', 'best-checkpoint-model.pt')
+        # path_to_model = "weighted/best-checkpoint-model.pt"
         model.load_state_dict(torch.load(path_to_model, map_location=torch.device('cpu')))
+        # model.load_state_dict(torch.load(path_to_model, map_location=torch.device('cpu')))
         model.eval()
         prediction = predict(model, video_dataset[0])
 
