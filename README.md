@@ -34,7 +34,7 @@ To get started with this project, follow these steps:
         python -m pip install "dlib-19.24.1-cp311-cp311-win_amd64.whl"
         ```
 
-    -**Note**: You can also download the dlib file from [DLIB_File](https://github.com/Murtaza-Saeed/dlib). Check your windows version, processor also while downloading it.
+    -**Note**: You can also download the dlib file from [DLIB_File](https://github.com/Murtaza-Saeed/dlib). Check your windows version, processor also while downloading it. You can refer this video for the same [DLIB_Installation](https://www.youtube.com/watch?v=9zeb902f98s)
 
 
 3. **Run the Streamlit App**: Once all requirements are installed successfully, you can run the Streamlit app using the following command:
