@@ -9,7 +9,7 @@ To get started with this project, follow these steps:
 1. **Clone the Repository**: Begin by cloning this repository to your local machine using the following command:
 
     ```
-    git clone [https://github.com/AnshumanGiramkar/deepfake-video-detection-ML.git](https://github.com/AnshumanGiramkar/deepfake-video-detection-ML.git)
+    git clone https://github.com/AnshumanGiramkar/deepfake-video-detection-ML.git
     ```
 
 2. **Install Requirements**: Create a Python virtual environment and install all project dependencies. You can do this by running the following commands:
